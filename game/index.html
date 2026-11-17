@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NEON SWARM — survive 150 seconds</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; height: 100%;
+    background: #04060f;
+    overflow: hidden;
+    font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  }
+  #wrap {
+    position: fixed; inset: 0;
+    display: flex; align-items: center; justify-content: center;
+    background: radial-gradient(1200px 700px at 50% 42%, #0a1030 0%, #04060f 62%);
+  }
+  canvas {
+    display: block;
+    box-shadow: 0 0 90px rgba(38, 198, 255, .16), 0 0 22px rgba(255, 62, 166, .10);
+    border-radius: 6px;
+    cursor: crosshair;
+    touch-action: none;
+  }
+</style>
+</head>
+<body>
+<div id="wrap"><canvas id="game" width="1280" height="720"></canvas></div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
